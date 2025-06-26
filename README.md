@@ -72,3 +72,8 @@ python -m pip install <library-name>
 
 👉https://code.visualstudio.com/download
 ## Step Four – Configure Path Variables
+
+
+## Step Five – Do a test run.
+
+copy paste this code (add code the user can copy paste) and check if it compiles. If it compiled Congratulations you can start with the K-Spice API
