@@ -31,7 +31,7 @@ Before using the K-SPICE API, you’ll need some extra Python tools (called "pac
 
 #### First, what is `pip`?
 
-`pip` is a tool that lets you download and install other useful Python tools (called packages). It usually comes with Python, but if it’s missing, you can install it by running:
+`pip` is a tool that lets you download and install other useful Python packages. It usually comes with Python, but if it’s missing, you can install it by running:
 
 ```bash
 python -m ensurepip --upgrade
