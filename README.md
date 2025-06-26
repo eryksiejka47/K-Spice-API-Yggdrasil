@@ -1,9 +1,6 @@
 ## K-SPICE setup Tutorial 
 
-
-## K-SPICE Setup Tutorial
-
-### 1. Step One – Install Python
+### 1. Step One – Install Python 
 
 To get started, you’ll need to install **Python version 3.12.10**.
 
