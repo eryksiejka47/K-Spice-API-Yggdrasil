@@ -20,7 +20,7 @@ To get started, you’ll need to install **Python version 3.12.10**.
 
 Make sure to choose the correct installer as shown below:
 
-images/python_download.png
+![alt](images/python_download.png)
 
 
 
