@@ -2,7 +2,6 @@
 
 This guide will help you set up everything you need to start working with the K-SPICE API.
 
----
 ## 📑 Table of Contents
 
 - #1-step-one--install-python
