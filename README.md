@@ -27,8 +27,7 @@ Make sure to choose the correct installer as shown below:
 
 ## Step Two – Install Required Python Packages
 
-Before using the K-SPICE API, you’ll need some extra Python tools (called "packages") that help with data handling, math, and plotting. We will start with downloading PIP.
-
+Before using the K-SPICE API, you’ll need some extra Python tools (called "packages") that help with data handling, math, and plotting. 
 ### First, open the Command Prompt window by either:
 
 - Typing `cmd` in the Windows search bar and pressing **Enter**, or  
