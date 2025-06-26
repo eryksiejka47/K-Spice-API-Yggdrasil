@@ -7,18 +7,17 @@ To get started, you’ll need to install **Python version 3.12.10**.
 👉 https://www.python.org/downloads/release/python-31210/
 
 
-
-
 ### 2. Step Two – Install Required Python Packages
 
-Before using the K-SPICE API, you need to install some useful Python packages.
+Before using the K-SPICE API, you’ll need some extra Python tools (called "packages") that help with data handling, math, and plotting.
 
-#### First, make sure `pip` is installed:
+#### First, what is `pip`?
 
-If you're using Windows and Python 3.12.10, `pip` should already be included. But if it's not, you can install it by running:
+`pip` is a tool that lets you download and install other useful Python tools (called packages). It usually comes with Python, but if it’s missing, you can install it by running:
 
 ```bash
 python -m ensurepip --upgrade
+
 ```
 
 #### Then, install the packages:
