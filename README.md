@@ -36,7 +36,7 @@ This will install:
 - `numpy` – for working with numbers and arrays
 - `pandas` – for handling data tables and CSV files
 
-💡 You can always come back to this step and install more packages later using the same format:
+You can always come back to this step and install more packages later using the same format:
 
 ```shell
 python -m pip install <library-name>
