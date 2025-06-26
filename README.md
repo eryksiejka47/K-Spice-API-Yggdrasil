@@ -17,6 +17,12 @@ To get started, you’ll need to install **Python version 3.12.10**.
 
 👉 https://www.python.org/downloads/release/python-31210/
 
+
+Make sure to choose the correct installer as shown below:
+
+python_download.png
+
+
 ---
 
 ### 2. Step Two – Install Required Python Packages
