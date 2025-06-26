@@ -7,7 +7,7 @@ This guide will help you set up everything you need to start working with the K-
 ## Table of Contents
 
 1. [Step One – Install Python](#step-one---install-python)
-2. [Step Two – Install Required Python Packages](#2. Step Two – Install Required Python Packages)
+2. [Step Two – Install Required Python Packages](#step-two---install-required-python-packages)
 
 
 ## Step One – Install Python
