@@ -8,6 +8,7 @@ This guide will help you set up everything you need to start working with the K-
 
 1. [Step One – Install Python](#step-one---install-python)
 2. [Step Two – Install Required Python Packages](#step-two---install-required-python-packages)
+3. [Step Three – Set up Visual Studio Code editor](#step-three---set-up-visual-studio-code-editor)
 
 
 ## Step One – Install Python
@@ -65,3 +66,9 @@ You can always come back to this step and install more packages later using the 
 
 ```shell
 python -m pip install <library-name>
+```
+
+## Step Three – Set up Visual Studio Code editor
+
+
+## Step Four – Configure Path Variables
