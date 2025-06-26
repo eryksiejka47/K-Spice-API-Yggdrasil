@@ -1,4 +1,4 @@
-# K-SPICE Setup Tutorial
+# K-SPICE API - Setup Tutorial
 
 This guide will help you set up everything you need to start working with the K-SPICE API.
 
