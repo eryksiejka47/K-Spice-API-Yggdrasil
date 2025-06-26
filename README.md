@@ -19,7 +19,7 @@ If you're using Windows and Python 3.12.10, `pip` should already be included. Bu
 
 ```bash
 python -m ensurepip --upgrade
-
+```
 
 #### Then, install the packages:
 
@@ -27,3 +27,4 @@ Open your terminal or command prompt and run this one command to install everyth
 
 ```bash
 python -m pip install matplotlib numpy pandas
+```
