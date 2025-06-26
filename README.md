@@ -29,3 +29,14 @@ python -m ensurepip --upgrade
 ```bash
 python -m pip install matplotlib numpy pandas
 ```
+
+This will install:
+
+- `matplotlib` – for creating plots and graphs
+- `numpy` – for working with numbers and arrays
+- `pandas` – for handling data tables and CSV files
+
+💡 You can always come back to this step and install more packages later using the same format:
+
+```shell
+python -m pip install <library-name>
