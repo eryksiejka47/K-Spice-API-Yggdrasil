@@ -2,15 +2,12 @@
 
 This guide will help you set up everything you need to start working with the K-SPICE API.
 
-## 📑 Table of Contents
+---
 
+## 📑 Table of Contents
 
 - #1-step-one--install-python
 - [2. Step Two – Install Required Python Packages](#
-
-
-
----
 
 ### 1. Step One – Install Python
 
@@ -30,6 +27,7 @@ Before using the K-SPICE API, you’ll need some extra Python tools (called "pac
 
 ```bash
 python -m ensurepip --upgrade
+
 ```
 
 #### Then, install the packages:
