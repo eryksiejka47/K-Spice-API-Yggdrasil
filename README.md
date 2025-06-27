@@ -11,7 +11,7 @@ This guide will help you set up everything you need to start working with the K-
 3. [Step Three – Set up Visual Studio Code editor](##step-three---set-up-visual-studio-code-editor)
 
 
-## Step One – Install Python
+## Step One - Install Python 
 
 To get started, you’ll need to install **Python version 3.12.10**.
 
@@ -73,7 +73,6 @@ python -m pip install <library-name>
 👉https://code.visualstudio.com/download
 ## Step Four – Configure Path Variables
 
-## Step One - Install Python 
 
 ## Step Five – Do a test run.
 
