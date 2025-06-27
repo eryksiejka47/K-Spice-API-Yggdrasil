@@ -73,7 +73,7 @@ python -m pip install <library-name>
 👉https://code.visualstudio.com/download
 ## Step Four – Configure Path Variables
 
-# step-one
+# step one
 
 ## Step Five – Do a test run.
 
