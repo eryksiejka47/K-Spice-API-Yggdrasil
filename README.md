@@ -6,7 +6,7 @@ This guide will help you set up everything you need to start working with the K-
 
 ## Table of Contents
 
-1. [Step One – Install Python](#step-one---install-python)
+1. [Step One – Install Python](##step-one---install-python)
 2. [Step Two – Install Required Python Packages](#step-two---install-required-python-packages)
 3. [Step Three – Set up Visual Studio Code editor](#step-three---set-up-visual-studio-code-editor)
 
