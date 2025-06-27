@@ -26,7 +26,7 @@ After the download open up the installation, make sure Add to Path is checked on
 
 ---
 
-# Step Two
+## Step Two
 
 Before using the K-SPICE API, you’ll need some extra Python tools (called "packages") that help with data handling, math, and plotting. 
 ### First, open the Command Prompt window by either:
