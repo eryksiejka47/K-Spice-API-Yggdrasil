@@ -7,7 +7,7 @@ This guide will help you set up everything you need to start working with the K-
 ## Table of Contents
 
 1. [Step One – Install Python](#step-one---install-python)
-2. [Step Two – Install Required Python Packages](#step-two---install-required-python-packages)
+2. [Step Two](#step-two)
 3. [Step Three – Set up Visual Studio Code editor](##step-three---set-up-visual-studio-code-editor)
 
 
@@ -26,7 +26,7 @@ After the download open up the installation, make sure Add to Path is checked on
 
 ---
 
-## Step Two – Install Required Python Packages
+# Step Two
 
 Before using the K-SPICE API, you’ll need some extra Python tools (called "packages") that help with data handling, math, and plotting. 
 ### First, open the Command Prompt window by either:
