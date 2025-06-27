@@ -38,7 +38,7 @@ If done correctly a window similar to this shoudl pop up on your screen:
 
 ![cmd](images/cmd_picture.PNG)
 
-#### First, what is `pip`?
+#### Installing `pip`?
 
 `pip` is a tool that lets you download and install other useful Python packages. It usually comes with Python, but if it’s missing, you can install it by running:
 
