@@ -142,8 +142,12 @@ Just remember to specify in **K-Spice Sim Explorer** which folder you’re using
 
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this shoudl pop up: 
 
-
 ![cmd](images/enviroment_variables.png)
+
+```shell
+C:\Program Files (x86)\Kongsberg\K-Spice\bin64
+```
+
 ## Step six – Do a test run.
 
 Use the code below to. If it compiled Congratulations you can start with the K-Spice API
