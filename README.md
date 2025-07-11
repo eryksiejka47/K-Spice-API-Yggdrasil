@@ -109,8 +109,7 @@ This should be pretty straightforward — just follow the necessary steps in the
 
 Once the installation is complete and you open the application:
 
-1. Go to the **Extensions** tab  
-   (you can also press `Ctrl+Shift+X` on your keyboard)
+1. Go to the **Extensions** tab (you can also press `Ctrl+Shift+X` on your keyboard)
 
 2. In the search bar, type **"Python"**
 
