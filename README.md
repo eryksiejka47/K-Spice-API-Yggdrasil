@@ -149,6 +149,7 @@ We need to add a new user variable, therefore press "New..." and call the variab
 ```shell
 C:\Program Files (x86)\Kongsberg\K-Spice\bin64
 ```
+It should look like this:
 
 ![cmd](images/PYTHONPATH.png)
 
