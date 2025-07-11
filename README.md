@@ -28,7 +28,12 @@ Make sure to choose the correct installer as shown below:
 
 ![alt](images/python_download.png)
 
-After the download open up the installation, make sure Add to Path is checked on and follow through with the installation. 
+Run the installation file, and a window like this should pop up. 
+
+
+![alt](images/python_installer.png)
+
+
 
 ---
 
