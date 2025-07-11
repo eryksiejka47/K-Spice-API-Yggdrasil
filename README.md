@@ -125,11 +125,15 @@ The screenshot below shows where to find the Extensions tab and which Python ext
 
 If you have used K-Spice before without the API you probably have this step completed, however for first time users make sure that you store your project files in a proper way that K-spice easliy can read them.
 
-Create a folder with a name you like in your c-drive, in my screenshot below you can see i called it k-space to illustrate that you can choose whatever name you want.
+Create a folder on your **C: drive** with any name you like.  
+In the screenshot below, you’ll see I named mine **k-space** — this is just to illustrate that you can choose whatever name suits you.
+
+Keep all your **K-Spice projects** organized inside this folder.
+
 
 ![cmd](images/path_projects.png)
 
-just remeber to specify in the k-spice sim explorer
+just remeber to specify in the k-spice sim explorer what folder you use to store ypur projects in: 
 
 ![cmd](images/k_spice_start.png)
 
