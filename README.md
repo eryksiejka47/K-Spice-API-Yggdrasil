@@ -11,7 +11,8 @@ This guide will help you set up everything you need to start working with the K-
 2. [Step Two Package Installation](#step-two-package-installation)
 3. [Step Three – Set up Visual Studio Code editor](#step-three--set-up-visual-studio-code-editor)
 4. [Step Four - Folder Structure](#step-four--folder-structure)
-5. [Step Five - Test Run](]
+5. [Configuration Of Path variables](#step-five--configure-path-variables)
+6. [Step Six - Test Run](]
 
 
 
