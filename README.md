@@ -150,7 +150,7 @@ We need to add a new user variable, therefore press "New..." and call the variab
 C:\Program Files (x86)\Kongsberg\K-Spice\bin64
 ```
 
-![cmd](images/enviroment_variables.png)
+![cmd](images/PYTHONPATH.png)
 
 ## Step six – Do a test run.
 
