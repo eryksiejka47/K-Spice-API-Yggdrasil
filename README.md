@@ -12,7 +12,7 @@ This guide will help you set up everything you need to start working with the K-
 3. [Set up Visual Studio Code editor](#step-three--set-up-visual-studio-code-editor)
 4. [Folder Structure](#step-four--folder-structure)
 5. [Configuration Of Path variables](#step-five--configure-path-variables)
-6. [Test Run]()
+6. [Test Run](#step-six--do-a-test-run)
 
 ---
 
