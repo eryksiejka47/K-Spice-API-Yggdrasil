@@ -33,7 +33,6 @@ Double-click the downloaded file. You should see a window like this:
 
 Chcek the "Add python.exe to PATH" and then click on "Customize installation" and check the boxes for:
 
-
 ![alt](images/python2.png)
 
 Click on "Next" and check the following options:
@@ -43,6 +42,7 @@ Click on "Next" and check the following options:
 ![alt](images/python3.png)
 
 Click "Install" to complete the installation. 
+
 ---
 
 ## Step Two Package Installation 
