@@ -37,6 +37,11 @@ Head over to @Customize installation and be sure to mark off pip and documentati
 
 ![alt](images/python2.png)
 
+
+Be sure that python is added to enviroment variables and click install. 
+
+![alt](images/python3.png)
+
 ---
 
 ## Step Two Package Installation 
