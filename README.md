@@ -92,7 +92,7 @@ To run your Python scripts, you need to install an environment that supports Pyt
 
 I recommend using **Visual Studio Code (VS Code)**, and I’ll quickly guide you through how to set it up. However, feel free to use any environment you prefer — if you already have a favorite, go for it!
 
-#### 🔧 Why VS Code?
+#### Why VS Code?
 - Lightweight and fast
 - Great Python support with extensions
 - Built-in terminal and debugger
