@@ -33,7 +33,9 @@ Run the installation file, and a window like this should pop up.
 
 ![alt](images/python_installer.jpg)
 
+Head over to @Customize installation and be sure to mark off pip and documentation if youre interested. If you install everything it wont do any difference for our application. 
 
+![alt](images/python2.png)
 
 ---
 
