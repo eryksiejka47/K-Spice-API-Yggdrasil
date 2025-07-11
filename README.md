@@ -88,7 +88,7 @@ If you have used K-Spice before without the API you probably have this step comp
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this shoudl pop up: 
 
 
-![cmd](images/cmd_picture.PNG)
+![cmd](images/enviroment_variables.png)
 ## Step six – Do a test run.
 
 Use the code below to. If it compiled Congratulations you can start with the K-Spice API
