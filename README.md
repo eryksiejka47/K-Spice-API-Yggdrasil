@@ -126,7 +126,7 @@ The screenshot below shows where to find the Extensions tab and which Python ext
 If you have used K-Spice before without the API you probably have this step completed, however for first time users make sure that you store your project files in a proper way that K-spice easliy can read them.
 
 Create a folder on your **C: drive** with any name you like.  
-In the screenshot below, you’ll see I named mine **k-space-projects** — this is just to illustrate that you can choose whatever name suits you.
+In the screenshot below, you’ll see I named mine **k-Space-Projects** — this is just to illustrate that you can choose whatever name suits you.
 
 Keep all your **K-Spice projects** organized inside this folder.
 
