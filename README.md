@@ -3,7 +3,7 @@
 CURRENTLY WORK IN PROGRESS  
 This guide will help you set up everything you need to start working with the K-SPICE API.
 
----
+
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ This guide will help you set up everything you need to start working with the K-
 5. [Configuration Of Path variables](#step-five--configure-path-variables)
 6. [Step Six - Test Run](]
 
-
+---
 
 ## Step One - Install Python 
 
