@@ -103,7 +103,7 @@ You can **Download and install VS Code** by following the link down below:
 👉https://code.visualstudio.com/download
 
 
-This should be pretty straightforward — just follow the necessary steps in the **VS Code installer**.
+This should be pretty straightforward — just follow the necessary steps in the **VS Code installer*, however if you struggle check out the video down below: 
 
 Once the installation is complete and you open the application:
 
