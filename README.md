@@ -45,7 +45,7 @@ Click "Install" to complete the installation.
 
 ---
 
-## Step Two Package Installation 
+## Step Two - Package Installation 
 
 Before using the K-SPICE API, you’ll need some extra Python tools (called "packages") that help with data handling, math, and plotting. 
 ### First, open the Command Prompt window by either:
