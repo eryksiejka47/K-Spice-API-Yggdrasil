@@ -134,6 +134,6 @@ If you get an error that the Kspice library is not found try including it this w
 import sys
 sys.path.append(r"C:/Program Files (x86)/Kongsberg/K-Spice/bin64")
 import kspice
-
-
 ```
+
+### Testing in debug mode 
