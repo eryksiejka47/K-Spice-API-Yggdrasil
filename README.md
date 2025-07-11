@@ -93,14 +93,13 @@ from datetime import timedelta
 import csv
 import kspice
 
-print("KSPICE version:", kspice.__version__) #Version Check
-###########################################################################
-
+# Version Check
+print("KSPICE version:", kspice.__version__)
 
 # Path for project folder 
 sim = kspice.Simulator(r"C:\K-Spice-Projects\DemoProject") 
 
-#Activvating the timeline
+# Activvating the timeline
 tl = sim.timelines[0]
 tl.activate()
 
