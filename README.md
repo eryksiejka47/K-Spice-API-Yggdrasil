@@ -79,6 +79,8 @@ python -m pip install <library-name>
 
 https://youtu.be/cu_ykIfBprI?feature=shared
 
+![cmd](images/extensions.jpg)
+
 ## Step Four – Folder Structure 
 
 If you have used K-Spice before without the API you probably have this step completed, however for first time users make sure that you store your project files in a proper way that K-spice easliy can read them.
