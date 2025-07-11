@@ -85,7 +85,10 @@ If you have used K-Spice before without the API you probably have this step comp
 
 ## Step Five – Configure Path Variables
 
+Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this shoudl pop up: 
 
+
+![cmd](images/cmd_picture.PNG)
 ## Step six – Do a test run.
 
 Use the code below to. If it compiled Congratulations you can start with the K-Spice API
