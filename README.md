@@ -133,7 +133,7 @@ Keep all your **K-Spice projects** organized inside this folder.
 
 ![cmd](images/path_projects.png)
 
-Just remember to specify in **K-Spice Sim Explorer** which folder you’re using to store your projects.
+Just remember to specify in **K-Spice Sim Explorer** which folder you’re using to store your projects:
 
 ![cmd](images/k_spice_start.png)
 
