@@ -23,17 +23,16 @@ To get started, you’ll need to install **Python version 3.12.10**.
 
 👉 https://www.python.org/downloads/release/python-31210/
 
-
-Make sure to choose the correct installer as shown below:
+Make sure to select the correct installer for your system, as shown below:
 
 ![alt](images/python_download.png)
 
-Run the installation file, and a window like this should pop up. 
-
+Double-click the downloaded file. You should see a window like this:
 
 ![alt](images/python_installer.jpg)
 
-Head over to @Customize installation and be sure to mark off pip and documentation if youre interested. If you install everything it wont do any difference for our application. 
+Click on Customize installation and check the boxes for:
+
 
 ![alt](images/python2.png)
 
