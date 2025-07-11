@@ -10,7 +10,7 @@ This guide will help you set up everything you need to start working with the K-
 1. [Step One – Install Python](#step-one---install-python)
 2. [Step Two Package Installation](#step-two-package-installation)
 3. [Step Three – Set up Visual Studio Code editor](#step-three--set-up-visual-studio-code-editor)
-4. [Step Four - Folder Structure](#step-three--set-up-visual-studio-code-editor)
+4. [Step Four - Folder Structure](#step-four--folder-structure)
 5. [Step Five - Test Run](]
 
 
