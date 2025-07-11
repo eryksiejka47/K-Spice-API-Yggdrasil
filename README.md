@@ -88,7 +88,7 @@ If you have used K-Spice before without the API you probably have this step comp
 
 ## Step six – Do a test run.
 
-copy paste this code (add code the user can copy paste) and check if it compiles. If it compiled Congratulations you can start with the K-Spice API
+Use the code below to. If it compiled Congratulations you can start with the K-Spice API
 
 ```python
 # Importing necessary libraries
@@ -120,4 +120,15 @@ tl.deactivate()
 
 # Close project 
 sim.close_project()
+```
+
+If you get an error that the Kspice library is not found try including it this way: 
+
+```python
+
+import sys
+sys.path.append(r"C:/Program Files (x86)/Kongsberg/K-Spice/bin64")
+import kspice
+
+
 ```
