@@ -127,6 +127,9 @@ If you have used K-Spice before without the API you probably have this step comp
 
 ![cmd](images/k_spice_start.png)
 
+Create a folder with a name you like, in my screenshot below you can see i called it k-space to illustrate that you can choose whatever name you want. just remeber to specify 
+![cmd](images/extensions.jpg)
+
 ## Step Five – Configure Path Variables
 
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this shoudl pop up: 
