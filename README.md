@@ -53,7 +53,7 @@ Before using the K-SPICE API, you’ll need some extra Python tools (called "pac
 - Typing `cmd` in the Windows search bar and pressing **Enter**, or  
 - Pressing **Windows key + R**, typing `cmd`, then pressing **Enter**
 
-If done correctly a window similar to this shoudl pop up on your screen: 
+If done correctly a window similar to this should pop up on your screen: 
 
 ![cmd](images/cmd_picture.PNG)
 
