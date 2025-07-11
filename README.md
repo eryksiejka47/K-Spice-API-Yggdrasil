@@ -7,12 +7,12 @@ This guide will help you set up everything you need to start working with the K-
 
 ## Table of Contents
 
-1. [Step One – Install Python](#step-one---install-python)
-2. [Step Two Package Installation](#step-two-package-installation)
-3. [Step Three – Set up Visual Studio Code editor](#step-three--set-up-visual-studio-code-editor)
-4. [Step Four - Folder Structure](#step-four--folder-structure)
+1. [Install Python](#step-one---install-python)
+2. [Package Installation In Python](#step-two-package-installation)
+3. [Set up Visual Studio Code editor](#step-three--set-up-visual-studio-code-editor)
+4. [Folder Structure](#step-four--folder-structure)
 5. [Configuration Of Path variables](#step-five--configure-path-variables)
-6. [Step Six - Test Run](]
+6. [Test Run]()
 
 ---
 
