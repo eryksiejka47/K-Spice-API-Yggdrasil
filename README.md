@@ -125,12 +125,15 @@ The screenshot below shows where to find the Extensions tab and which Python ext
 
 If you have used K-Spice before without the API you probably have this step completed, however for first time users make sure that you store your project files in a proper way that K-spice easliy can read them.
 
-![cmd](images/k_spice_start.png)
-
-Create a folder with a name you like, in my screenshot below you can see i called it k-space to illustrate that you can choose whatever name you want. just remeber to specify 
-
+Create a folder with a name you like in your c-drive, in my screenshot below you can see i called it k-space to illustrate that you can choose whatever name you want.
 
 ![cmd](images/path_projects.png)
+
+just remeber to specify in the k-spice sim explorer
+
+![cmd](images/k_spice_start.png)
+
+
 
 ## Step Five – Configure Path Variables
 
