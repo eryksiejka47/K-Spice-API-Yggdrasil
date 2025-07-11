@@ -83,6 +83,8 @@ https://youtu.be/cu_ykIfBprI?feature=shared
 
 If you have used K-Spice before without the API you probably have this step completed, however for first time users make sure that you store your project files in a proper way that K-spice easliy can read them.
 
+![cmd](images/k_spice_start.PNG)
+
 ## Step Five – Configure Path Variables
 
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this shoudl pop up: 
