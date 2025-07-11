@@ -140,13 +140,17 @@ Just remember to specify in **K-Spice Sim Explorer** which folder you’re using
 
 ## Step Five – Configure Path Variables
 
-Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this shoudl pop up: 
+Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this should pop up: 
 
 ![cmd](images/enviroment_variables.png)
+
+We need to add a new user variable, therefore press "New..." and call the variable "PYTHONPATH" and copy and paste the line below as the "Variable value":
 
 ```shell
 C:\Program Files (x86)\Kongsberg\K-Spice\bin64
 ```
+
+![cmd](images/enviroment_variables.png)
 
 ## Step six – Do a test run.
 
