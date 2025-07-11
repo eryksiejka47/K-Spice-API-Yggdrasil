@@ -144,7 +144,7 @@ Open up the search bar in windows and type in "edit enviroment variables for you
 
 ![cmd](images/enviroment_variables.png)
 
-We need to add a new user variable, therefore press "New..." and call the variable "PYTHONPATH" and copy and paste the line below as the "Variable value":
+We need to add a new user variable, therefore press "New..." and name the variable "PYTHONPATH". Next, copy and paste the line below in the "Variable value" field:
 
 ```shell
 C:\Program Files (x86)\Kongsberg\K-Spice\bin64
