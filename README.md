@@ -31,7 +31,7 @@ Double-click the downloaded file. You should see a window like this:
 
 ![alt](images/python_installer.jpg)
 
-Click on Customize installation and check the boxes for:
+Chcek the "Add python to path" and then click on "Customize installation" and check the boxes for:
 
 
 ![alt](images/python2.png)
