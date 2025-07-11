@@ -73,6 +73,7 @@ python -m pip install <library-name>
 
 👉https://code.visualstudio.com/download
 
+https://youtu.be/cu_ykIfBprI?feature=shared
 
 ## Step Four – Folder Structure 
 
