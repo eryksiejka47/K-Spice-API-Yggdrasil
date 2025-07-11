@@ -102,6 +102,20 @@ You can **Download and install VS Code** by following the link down below:
 
 👉https://code.visualstudio.com/download
 
+
+This should be pretty straightforward — just follow the necessary steps in the **VS Code installer**.
+
+Once the installation is complete and you open the application:
+
+1. Go to the **Extensions** tab  
+   (you can also press `Ctrl+Shift+X` on your keyboard)
+
+2. In the search bar, type **"Python"**
+
+3. Look for the extension published by **Microsoft** and click **Install**
+
+The screenshot below shows where to find the Extensions tab and which Python extension to install:
+
 https://youtu.be/cu_ykIfBprI?feature=shared
 
 ![cmd](images/extensions.jpg)
