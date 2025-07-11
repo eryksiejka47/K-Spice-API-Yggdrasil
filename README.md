@@ -31,7 +31,7 @@ Make sure to choose the correct installer as shown below:
 Run the installation file, and a window like this should pop up. 
 
 
-![alt](images/python_installer.png)
+![alt](images/python_installer.jpg)
 
 
 
