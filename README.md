@@ -36,11 +36,13 @@ Chcek the "Add python.exe to PATH" and then click on "Customize installation" an
 
 ![alt](images/python2.png)
 
-
-Be sure that python is added to enviroment variables and click install. 
+Click on "Next" and check the following options:
+- ✅ **pip** (Python package manager)
+- ✅ **Documentation**
 
 ![alt](images/python3.png)
 
+Click "Install" to complete the installation. 
 ---
 
 ## Step Two Package Installation 
