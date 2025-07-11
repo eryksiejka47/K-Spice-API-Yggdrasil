@@ -133,10 +133,9 @@ Keep all your **K-Spice projects** organized inside this folder.
 
 ![cmd](images/path_projects.png)
 
-just remeber to specify in the k-spice sim explorer what folder you use to store ypur projects in: 
+Just remember to specify in **K-Spice Sim Explorer** which folder you’re using to store your projects.
 
 ![cmd](images/k_spice_start.png)
-
 
 
 ## Step Five – Configure Path Variables
