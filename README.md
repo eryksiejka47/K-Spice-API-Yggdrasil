@@ -84,3 +84,36 @@ If you have used K-Spice before without the API you probably have this step comp
 ## Step six – Do a test run.
 
 copy paste this code (add code the user can copy paste) and check if it compiles. If it compiled Congratulations you can start with the K-Spice API
+
+```python
+# Importing necessary libraries
+import pandas as pd
+import numpy as np
+from datetime import timedelta
+import csv
+import kspice
+
+print("KSPICE version:", kspice.__version__) #Version Check
+###########################################################################
+
+
+# Path for project folder 
+sim = kspice.Simulator(r"C:\K-Spice-Projects\DemoProject") 
+
+#Activvating the timeline
+tl = sim.timelines[0]
+tl.activate()
+
+# Load models, parameters, initial_conditions 
+tl.load("KSpiceTutorial Model", "KSpiceTutorial Model", "Steady_state")
+
+# Run timeline for 120 seconds 
+sim_time = timedelta(seconds=120)
+tl.run_for(sim_time)
+
+# Deactivate the timeline
+tl.deactivate()
+
+# Close project 
+sim.close_project()
+```
