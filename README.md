@@ -37,7 +37,7 @@ This filename provides useful information:
 
 Based on the information we’ve gathered above, we need to install Python 3.12. After speaking with people at Kongsberg, they recommended installing version 3.12.10. I’m not entirely sure why, but I assume that any 3.12 version should work.
 
-To get started, you’ll need to install **Python version 3.12.10**.
+We therefore start by installing **Python version 3.12.10**:
 
 👉 https://www.python.org/downloads/release/python-31210/
 
