@@ -145,9 +145,9 @@ First, it’s important to verify that the **K-Spice API package** is located in
 
 In the screenshot below, we can see the following file:
 
-```
+`
 kspice.cp312-win_amd64
-```
+`
 
 This filename provides useful information:
 
