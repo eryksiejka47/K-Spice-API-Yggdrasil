@@ -33,8 +33,6 @@ This filename provides useful information:
 - **`cp312`**: Indicates compatibility with **Python 3.12**.
 - **`win_amd64`**: Specifies that the package is intended for **64-bit Windows systems**.
 
-This explains why Python 3.12 is required for the K-Spice API to function correctly on your system.
-
 ![cmd](images/bin64.PNG)
 
 To get started, you’ll need to install **Python version 3.12.10**.
