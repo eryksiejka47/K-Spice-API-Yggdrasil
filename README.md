@@ -219,7 +219,15 @@ import kspice
 ```
 
 ## How to use? 
-You can find the official K-Spice documentation [here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr), download the folder to your own device and you can view it.
+Using the K SPICE API allows us to automate testing workflows efficiently. You can program your own test sequences, run them at any time including overnight to save working hours, and export the results to CSV files. From there, Python offers a wide range of tools for data processing, plotting, and analysis. It provides a flexible and powerful environment for working with simulation data.
+
+This chapter gives a brief introduction to how the API works and what resources are available to help you get started.
+
+First of all, you can find the official K-Spice documentation [here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr).
+Download the folder to your device to view the contents. Please note that this documentation is not publicly available.
+
+
+
 
 
 
