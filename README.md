@@ -16,6 +16,25 @@ This guide will help you set up everything you need to start working with the **
 
 ## Step One - Install Python 
 
+#### Verifying the K-Spice API Package
+
+First, it’s important to verify that the **K-Spice API package** is located in the `bin64` folder.
+
+In the screenshot below, we can see the following file:
+
+`
+kspice.cp312-win_amd64
+`
+
+This filename provides useful information:
+
+- **`cp312`**: Indicates compatibility with **Python 3.12**.
+- **`win_amd64`**: Specifies that the package is intended for **64-bit Windows systems**.
+
+This explains why Python 3.12 is required for the K-Spice API to function correctly on your system.
+
+![cmd](images/bin64.PNG)
+
 To get started, you’ll need to install **Python version 3.12.10**.
 
 👉 https://www.python.org/downloads/release/python-31210/
@@ -136,24 +155,6 @@ Just remember to specify in **K-Spice Sim Explorer** which folder you’re using
 
 
 ## Step Five – Configure Path Variables
-#### Verifying the K-Spice API Package
-
-First, it’s important to verify that the **K-Spice API package** is located in the `bin64` folder.
-
-In the screenshot below, we can see the following file:
-
-`
-kspice.cp312-win_amd64
-`
-
-This filename provides useful information:
-
-- **`cp312`**: Indicates compatibility with **Python 3.12**.
-- **`win_amd64`**: Specifies that the package is intended for **64-bit Windows systems**.
-
-This explains why Python 3.12 is required for the K-Spice API to function correctly on your system.
-
-![cmd](images/bin64.PNG)
 
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this should pop up: 
 
