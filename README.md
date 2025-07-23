@@ -222,9 +222,9 @@ import kspice
 
 
 ### How to use? 
-You can find the official K-Spice documentation here, download the folder to your own device and you can view it: 
-
-https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr
+You can find the official K-Spice documentation [here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr), download the folder to your own device and you can view it.
 
 
-[here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr)
+
+
+
