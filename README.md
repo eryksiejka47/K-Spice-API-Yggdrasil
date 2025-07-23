@@ -1,7 +1,5 @@
 # K-SPICE API - Setup Tutorial
 
-⚠️ CURRENTLY WORK IN PROGRESS... STEP 5 AND 6 NOT FINISHED YET ⚠️
-
 This guide will help you set up everything you need to start working with the **K-SPICE API**.  
 > **Note:** This tutorial assumes that **K-SPICE** is already installed on your system.
 
