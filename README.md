@@ -140,6 +140,8 @@ Just remember to specify in **K-Spice Sim Explorer** which folder you’re using
 
 ## Step Five – Configure Path Variables
 
+![cmd](images/bin64.PNG)
+
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this should pop up: 
 
 ![cmd](images/enviroment_variables.png)
