@@ -20,7 +20,7 @@ Before downloading Python, it is important to verify that you have the necessary
 
 ### Verifying the K-Spice API Package
 
-First, it’s important to verify that the **K-Spice API package** is located in the `bin64` folder.
+First, we need to verify that the **K-Spice API package** is located in the `bin64` folder.
 
 In the screenshot below, we can see the following file:
 
