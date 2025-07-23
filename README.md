@@ -139,7 +139,7 @@ Just remember to specify in **K-Spice Sim Explorer** which folder you’re using
 
 
 ## Step Five – Configure Path Variables
-Firstly it is important to check that the K-Spice API package is inside the bin64 folder. In the screenshot down below from the bin64 folder we can see that the file found here is named "kspice.cp312-win_amd64" (See scrennshot down below).
+Firstly it is important to check that the K-Spice API package is inside the bin64 folder. In the screenshot down below from the bin64 folder we can see that the file found here is named `kspice.cp312-win_amd64` (See scrennshot down below).
 The name contains 312, indicating the python version it is compatible with, explaining why we need python 3.12, and win_amd64 meaning that it is for windows system with 64-bit architecture. 
 
 ![cmd](images/bin64.PNG)
