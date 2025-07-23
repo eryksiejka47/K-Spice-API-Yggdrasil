@@ -18,7 +18,7 @@ This guide will help you set up everything you need to start working with the **
 
 Before downloading Python, it is important to verify that you have the necessary package on your device and determine which Python version is compatible with it.
 
-#### Verifying the K-Spice API Package
+### Verifying the K-Spice API Package
 
 First, it’s important to verify that the **K-Spice API package** is located in the `bin64` folder.
 
