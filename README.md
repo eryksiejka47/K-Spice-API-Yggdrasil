@@ -38,7 +38,7 @@ Click on "Next" and check the following options:
 
 ![alt](images/python3.png)
 
-Click "Install" to complete the installation. 
+Click `Install` to complete the installation. 
 
 ---
 
