@@ -139,7 +139,7 @@ Just remember to specify in **K-Spice Sim Explorer** which folder you’re using
 
 
 ## Step Five – Configure Path Variables
-### Verifying the K-Spice API Package
+#### Verifying the K-Spice API Package
 
 First, it’s important to verify that the **K-Spice API package** is located in the `bin64` folder.
 
