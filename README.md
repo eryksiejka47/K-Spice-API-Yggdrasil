@@ -11,6 +11,8 @@ This guide will help you set up everything you need to start working with the **
 4. [Folder Structure](#step-four--folder-structure)
 5. [Configuration Of Path variables](#step-five--configure-path-variables)
 6. [Test Run](#step-six--do-a-test-run)
+7. [How to use?](#how-to-use)
+#how-to-use
 
 ---
 
