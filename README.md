@@ -221,6 +221,10 @@ import kspice
 
 This chapter provides a brief overview of the available resources and explains how to use the API effectively.
 
+1. [Official Documentation](#step-one---install-python)
+2. [Example Code](#step-two---package-installation)
+3. [Useful Github pages](#step-two---package-installation)
+4. [Running Code in Debug Mode](#step-two---package-installation)
 ---
 ### Official Documentation
 
