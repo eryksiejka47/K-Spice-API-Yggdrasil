@@ -231,7 +231,7 @@ Download the folder to your device to view the contents. Please note that this d
 
 ### Github pages: 
 
-[K-Spice Python API](https://github.com/JonathanNees/K-SpicePython/tree/main).
+K-Spice Architecture and example code from Kongsberg Digital: [K-Spice Python API](https://github.com/JonathanNees/K-SpicePython/tree/main).
 
 Framework for orchestrating and automating simulation workflows in the Yggdrasil Engineering Simulator: [YggSimLib](https://github.com/h-enerst/YggSimLib).
 
