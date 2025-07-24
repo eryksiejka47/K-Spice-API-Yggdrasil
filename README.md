@@ -247,6 +247,12 @@ When you run your code in debug mode, execution will stop right before that line
 
 ![cmd](images/breakpoint.png)
 
+Once you’ve selected the breakpoints you want, click on “Run and Debug” in the left sidebar (the play icon with a bug).
+This will open a dropdown menu at the top of the window—choose “Python Debugger” from the list to start the debugging session.
+Your code will now run and automatically pause at the breakpoints you’ve set, allowing you to inspect variables and step through the execution.
+
+![cmd](images/PLACEHOLDER)
+
 While running your Python script—especially in debug mode—it can be very useful to monitor what’s happening in real time in K-Spice.
 To do this, open SimExplorer, where you’ll find an option to connect to the simulation.
 By clicking Connect, you’ll be linked to the active session that your Python script has started, allowing you to observe the model as it runs.
