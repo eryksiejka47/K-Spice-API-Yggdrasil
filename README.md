@@ -218,9 +218,11 @@ import kspice
 ```
 
 ## Useful Resources 
+
 This chapter provides a brief overview of the available resources and explains how to use the API effectively.
 ---
 ### Official Documentation
+
 First of all, you can find the official K-Spice documentation [here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr).
 Download the folder to your device to view the contents. Please note that this documentation is not publicly available.
 
