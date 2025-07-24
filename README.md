@@ -245,6 +245,7 @@ Framework for orchestrating and automating simulation workflows in the Yggdrasil
 
 ![cmd](images/debug.PNG)
 
+Hover with your mouse over the left of the code line... 
 ![cmd](images/breakpoint.png)
 
 ### Example Code: 
