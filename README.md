@@ -240,8 +240,7 @@ Framework for orchestrating and automating simulation workflows in the Yggdrasil
 
 ### Running Code in Debug Mode: 
 
-
-
+![cmd](images/debug.PNG)
 
 
 
