@@ -246,8 +246,7 @@ While running the simulation, and especially using the debug mode feature it is 
 ![cmd](images/connect.PNG)
 
 ### Example Code: 
-
-
+Jeg har skrevet litt eksempelkode for ulike basiske ting kjøring av stepresponser og plotting av grafer fra en CSV fil: 
 
 
 
