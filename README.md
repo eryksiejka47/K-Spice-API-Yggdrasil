@@ -102,7 +102,7 @@ You can always come back to this step and install more packages later using the 
 python -m pip install <library-name>
 ```
 
-### Have more python versions on your computer ? 
+
 
 ## Step Three – Set up Visual Studio Code editor
 
