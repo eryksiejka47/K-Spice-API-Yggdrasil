@@ -250,7 +250,7 @@ Hover with your mouse over the left of the code line...
 
 While running the simulation, and especially using the debug mode feature it is nyttig å følge med på hva som skjer. Dette kan du gjøre ved å koble deg til modellen. åpn opp SimExplorer og du vil se at det er mulig å koble seg til den. 
 
-![cmd](images/breakpoint.png)
+![cmd](images/connect.PNG)
 
 ### Example Code: 
 
