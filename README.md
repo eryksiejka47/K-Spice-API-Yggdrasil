@@ -201,7 +201,7 @@ tl.deactivate()
 sim.close_project()
 ```
 
-If you get an error that the Kspice library is not found try including it this way: 
+If you get an error stating that the K-Spice library is not found, try including it this way: 
 
 ```python
 
