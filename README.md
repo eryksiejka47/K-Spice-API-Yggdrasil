@@ -247,7 +247,9 @@ When you run your code in debug mode, execution will stop right before that line
 
 ![cmd](images/breakpoint.png)
 
-While running the simulation, and especially using the debug mode feature it is nyttig å følge med på hva som skjer. Dette kan du gjøre ved å koble deg til modellen. åpn opp SimExplorer og du vil se at det er mulig å koble seg til den. 
+While running your Python script—especially in debug mode—it can be very useful to monitor what’s happening in real time in K-Spice.
+To do this, open SimExplorer, where you’ll find an option to connect to the simulation.
+By clicking Connect, you’ll be linked to the active session that your Python script has started, allowing you to observe the model as it runs.
 
 ![cmd](images/connect.PNG)
 
