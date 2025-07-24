@@ -6,10 +6,10 @@ This guide will help you set up everything you need to start working with the **
 ## Table of Contents
 
 1. [Python Installation](#step-one---install-python)
-2. [Package Installation In Python](#step-two---package-installation)
-3. [Setting Up Visual Studio Code editor](#step-three--set-up-visual-studio-code-editor)
+2. [Package Installation in Python](#step-two---package-installation)
+3. [Setting up Visual Studio Code Editor](#step-three--set-up-visual-studio-code-editor)
 4. [Folder Structure](#step-four--folder-structure)
-5. [Configuration Of Path variables](#step-five--configure-path-variables)
+5. [Configuration of Path variables](#step-five--configure-path-variables)
 6. [Test Run](#step-six--do-a-test-run)
 7. [Useful Resources](#useful-resources)
 
