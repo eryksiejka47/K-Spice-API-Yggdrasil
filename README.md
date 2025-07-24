@@ -229,6 +229,13 @@ Download the folder to your device to view the contents. Please note that this d
 
 ![cmd](images/documentation.png)
 
+### Github pages: 
+
+[here](https://github.com/JonathanNees/K-SpicePython/tree/main).
+
+[here](https://github.com/h-enerst/YggSimLib).
+
+
 
 
 
