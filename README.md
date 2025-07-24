@@ -229,9 +229,9 @@ Download the folder to your device to view the contents. Please note that this d
 
 ![cmd](images/documentation.png)
 
-### Example code: 
+### Example Code: 
 
-### Github pages: 
+### Useful Github pages: 
 
 K-Spice Architecture and example code from Kongsberg Digital: [K-Spice Python API](https://github.com/JonathanNees/K-SpicePython/tree/main).
 
