@@ -41,7 +41,7 @@ Based on the information we’ve gathered above, we need to install Python 3.12.
 
 We therefore start by installing **Python version 3.12.10**:
 
-👉 https://www.python.org/downloads/release/python-31210/
+[Python version 3.12.10](https://www.python.org/downloads/release/python-31210/)
 
 Make sure to select the correct installer for your system, as shown below:
 
