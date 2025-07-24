@@ -233,7 +233,7 @@ Download the folder to your device to view the contents. Please note that this d
 
 [K-Spice Python API](https://github.com/JonathanNees/K-SpicePython/tree/main).
 
-[YggSimLib](https://github.com/h-enerst/YggSimLib).
+Python framework for orchestrating and automating simulation workflows in the Yggdrasil Engineering Simulator: [YggSimLib](https://github.com/h-enerst/YggSimLib).
 
 
 
