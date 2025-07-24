@@ -231,9 +231,9 @@ Download the folder to your device to view the contents. Please note that this d
 
 ### Github pages: 
 
-[here](https://github.com/JonathanNees/K-SpicePython/tree/main).
+[K-Spice Python API](https://github.com/JonathanNees/K-SpicePython/tree/main).
 
-[here](https://github.com/h-enerst/YggSimLib).
+[YggSimLib](https://github.com/h-enerst/YggSimLib).
 
 
 
