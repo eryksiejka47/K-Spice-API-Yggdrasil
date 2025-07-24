@@ -218,9 +218,7 @@ import kspice
 ```
 
 ## Useful Resources 
-Using the K-SPICE API allows us to automate testing workflows efficiently. You can program your own test sequences, run them at any time including overnight to save working hours, and export the results to CSV files. From there, Python offers a wide range of tools for data processing, plotting, and analysis. It provides a flexible and powerful environment for working with simulation data.
-
-This chapter gives a brief introduction to how the API works and what resources are available to help you get started.
+This chapter gives a brief introduction to resources available and how you can use the API in an effecive manner. 
 
 ---
 ### Official Documentation
