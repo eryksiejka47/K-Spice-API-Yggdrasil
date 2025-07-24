@@ -55,7 +55,7 @@ Chcek the `Add python.exe to PATH` and then click on `Customize installation` an
 
 ![alt](images/python2.png)
 
-Click on "Next" and then click `Install` to complete the installation. :
+Click on "Next" and then click `Install` to complete the installation:
 
 ![alt](images/python3.png)
 
