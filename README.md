@@ -220,6 +220,7 @@ import kspice
 ## Useful Resources 
 
 This chapter provides a brief overview of the available resources and explains how to use the API effectively.
+
 ---
 ### Official Documentation
 
