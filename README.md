@@ -115,9 +115,7 @@ I recommend using **Visual Studio Code (VS Code)**, and I’ll quickly guide you
 - Built-in terminal and debugger
 - Works on Windows, macOS, and Linux
 
-You can **Download and install VS Code** by following the link down below: 
-
-👉https://code.visualstudio.com/download
+You can **Download and install VS Code** [here](https://code.visualstudio.com/download).
 
 This should be pretty straightforward — just follow the necessary steps in the *VS Code installer*, however if you struggle check out this [video](https://youtu.be/cu_ykIfBprI?feature=shared).
 
