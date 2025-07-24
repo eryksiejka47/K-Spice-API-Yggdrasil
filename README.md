@@ -242,7 +242,9 @@ You can access debug mode by clicking the **Run and Debug** icon on the left sid
 See the screenshot below for reference.
 ![cmd](images/debug.PNG)
 
-Hover with your mouse over the left of the code line... 
+To set a breakpoint in VS Code, hover your mouse over the left margin next to the line of code you want to pause at, and click to place the breakpoint.
+When you run your code in debug mode, execution will stop right before that line, allowing you to inspect variables and confirm when you're ready to continue.
+
 ![cmd](images/breakpoint.png)
 
 While running the simulation, and especially using the debug mode feature it is nyttig å følge med på hva som skjer. Dette kan du gjøre ved å koble deg til modellen. åpn opp SimExplorer og du vil se at det er mulig å koble seg til den. 
