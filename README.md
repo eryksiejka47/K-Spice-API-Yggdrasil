@@ -223,7 +223,7 @@ This chapter provides a brief overview of the available resources and explains h
 
 1. [Official Documentation](#official-documentation)
 2. [Example Code](#example-code)
-3. [Useful Github pages](#step-two---package-installation)
+3. [Useful Github pages](#useful-github-pages)
 4. [Running Code in Debug Mode](#step-two---package-installation)
 ---
 ### Official Documentation
