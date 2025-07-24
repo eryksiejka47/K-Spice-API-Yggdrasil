@@ -249,6 +249,6 @@ While running the simulation, and especially using the debug mode feature it is 
 Jeg har skrevet litt eksempelkode for ulike basiske ting kjøring av stepresponser og plotting av grafer fra en CSV fil: 
 
 1. [Plotting from CSV file](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/1aff5b22a0a3b9e4937f39baf6b7efca55651b2a/Examples/plotting.py)
-2. [Step Response - Switch Case Structure](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/1aff5b22a0a3b9e4937f39baf6b7efca55651b2a/Examples/plotting.py)
+2. [Step Response - Switch Case Structure](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/c1537602b9b8fa667baa5a8032770dfdca1ae8be/Examples/Step_Switch_Case.py)
 
 
