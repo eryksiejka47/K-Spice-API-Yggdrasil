@@ -236,6 +236,10 @@ Framework for orchestrating and automating simulation workflows in the Yggdrasil
 
 ### Running Code in Debug Mode: 
 
+Using debug mode in VS Code while running your code can be extremely helpful.
+It allows you to set breakpoints where the execution will automatically pause, giving you a chance to inspect variables and step through the code before continuing.
+You can access debug mode by clicking the Run and Debug icon on the left sidebar in VS Code.
+See the screenshot below for reference.
 ![cmd](images/debug.PNG)
 
 Hover with your mouse over the left of the code line... 
