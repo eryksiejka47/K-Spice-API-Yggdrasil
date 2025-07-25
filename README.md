@@ -259,6 +259,8 @@ By clicking Connect, you’ll be linked to the active session that your Python s
 
 ![cmd](images/connect.PNG)
 
+---
+
 ### Example Code: 
 Below are code examples demonstrating basic tasks such as running step responses and plotting data from CSV files: 
 
