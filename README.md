@@ -238,8 +238,8 @@ Framework for orchestrating and automating simulation workflows in the Yggdrasil
 
 Using debug mode in VS Code while running your code can be extremely helpful.
 It allows you to set breakpoints where the execution will automatically pause, giving you a chance to inspect variables and step through the code before continuing.
-You can access debug mode by clicking the **Run and Debug** icon on the left sidebar in VS Code.
-See the screenshot below for reference.
+You can access debug mode by clicking the **Run and Debug** icon on the left sidebar in VS Code. See the screenshot below for reference.
+
 ![cmd](images/debug.PNG)
 
 To set a breakpoint in VS Code, hover your mouse over the left margin next to the line of code you want to pause at, and click to place the breakpoint.
