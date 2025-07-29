@@ -177,18 +177,17 @@ from datetime import timedelta
 import csv
 import kspice
 
-# Version Check
-print("KSPICE version:", kspice.__version__)
+print("KSPICE version:", kspice.__version__) #Version Check
 
 # Path for project folder 
 sim = kspice.Simulator(r"C:\K-Spice-Projects\DemoProject") 
 
-# Activvating the timeline
+#Activvating the timeline
 tl = sim.timelines[0]
 tl.activate()
 
 # Load models, parameters, initial_conditions 
-tl.load("KSpiceTutorial Model", "KSpiceTutorial Model", "Steady_state")
+tl.load("KSpiceTutorial Model", "KSpiceTutorial Model", "KSpiceTutorial Model")
 
 # Run timeline for 120 seconds 
 sim_time = timedelta(seconds=120)
