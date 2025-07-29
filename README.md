@@ -264,7 +264,7 @@ By clicking Connect, you’ll be linked to the active session that your Python s
 ### Example Code: 
 Below are code examples demonstrating basic tasks such as running step responses and plotting data from CSV files: 
 
-1. [Plotting from CSV file](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/1aff5b22a0a3b9e4937f39baf6b7efca55651b2a/Examples/plotting.py)
+1. [Plotting from CSV file](https://github.com/eryksiejka47/K-Spice-API-set-up/tree/main/plotting)
 2. [Step Response - Switch Case Structure](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/763f5fde5ff52e5cbcaf33127f5efe01cbf67bd8/Examples/Step_Switch_Case.py)
 
 
