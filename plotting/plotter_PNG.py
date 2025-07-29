@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV file
-df = pd.read_csv("DemoProject_state0_28.07.2025_10-37.csv")
+df = pd.read_csv("ENTER_NAME_OF_YOUR_FILE.csv")
 
 # Extract time and data columns
 time = df[df.columns[0]]
@@ -84,7 +84,7 @@ host.set_xlabel(df.columns[0])
 fig.legend(lines, labels, loc='upper center', ncol=3, bbox_to_anchor=(0.5, 0.98))
 
 # Final styling
-plt.title("D20TIC0188: 10% Downstep:")
+plt.title("NAME_OF_YOUR_PLOT")
 plt.grid(True)
 plt.tight_layout()
 plt.show()
