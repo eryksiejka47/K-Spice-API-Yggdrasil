@@ -51,6 +51,24 @@ def adjust_parameter(timeline, selected_app, parameter_name, multiplier):
     print(f"Updated {parameter_name} to {new_val} ({multiplier * 100:.1f}% of original)")
 
 
+def change_valve_by_value(timeline, selected_app, parameter_name, change_value):
+    """
+    Adjusts a given parameter by adding or subtracting a specific value.
+
+    Parameters:
+    timeline: The active K-Spice timeline object.
+    selected_app: The application name within the timeline.
+    parameter_name (str): The name of the parameter to adjust.
+    change_value (float): The value to add or subtract (e.g., +10 or -25).
+    """
+    current_val = timeline.get_value(selected_app, parameter_name)
+    print(f"Current value of {parameter_name}: {current_val}")
+    
+    new_val = current_val + (change_value/100)
+    timeline.set_value(selected_app, parameter_name, new_val)
+    
+    print(f"Updated {parameter_name} to {new_val} (change of {change_value:+.1f})")
+
 
 def save_samples_to_csv(filename):
     """
