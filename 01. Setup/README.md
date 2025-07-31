@@ -131,7 +131,7 @@ The screenshot below shows where to find the Extensions tab and which Python ext
 
 
 
-![cmd](images/extensions.jpg)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/c173fa414f942ef8d1591e3eeffec1c03eb91a22/images/extensions.jpg)
 
 ## Step Four – Folder Structure 
 
