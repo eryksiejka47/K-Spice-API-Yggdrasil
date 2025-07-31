@@ -1,4 +1,4 @@
-# K-SPICE API - Yggdrasil
+# K-Spice API - Yggdrasil
 
 This guide will help you set up everything you need to start working with the **K-SPICE API**.  
 > **Note:** This tutorial assumes that **K-SPICE** is already installed on your system.
