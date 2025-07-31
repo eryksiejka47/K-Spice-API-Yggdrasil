@@ -143,18 +143,18 @@ In the screenshot below, you’ll see I named mine **K-Space-Projects** — this
 Keep all your **K-Spice projects** organized inside this folder.
 
 
-![cmd](images/path_projects.png)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/extensions.jpg)
 
 Just remember to specify in **K-Spice Sim Explorer** which folder you’re using to store your projects:
 
-![cmd](images/k_spice_start.png)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/k_spice_start.png)
 
 
 ## Step Five – Configure Path Variables
 
 Open up the search bar in windows and type in "edit enviroment variables for your account" and open it. A window like this should pop up: 
 
-![cmd](images/enviroment_variables.png)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/enviroment_variables.png)
 
 We need to add a new user variable, therefore press "New..." and name the variable "PYTHONPATH". Next, copy and paste the line below in the "Variable value" field:
 
@@ -163,7 +163,7 @@ C:\Program Files (x86)\Kongsberg\K-Spice\bin64
 ```
 It should look like this:
 
-![cmd](images/PYTHONPATH.png)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/PYTHONPATH.png)
 
 ## Step six – Do a test run.
 
@@ -223,7 +223,7 @@ This chapter provides a brief overview of the available resources and explains h
 First of all, you can find the official K-Spice documentation [here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr).
 Download the folder to your device to view the contents. Please note that this documentation is not publicly available.
 
-![cmd](images/documentation.png)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/documentation.png)
 
 ### Useful Github pages: 
 
@@ -239,24 +239,24 @@ Using debug mode in VS Code while running your code can be extremely helpful.
 It allows you to set breakpoints where the execution will automatically pause, giving you a chance to inspect variables and step through the code before continuing.
 You can access debug mode by clicking the **Run and Debug** icon on the left sidebar in VS Code. See the screenshot below for reference.
 
-![cmd](images/debug.PNG)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/debug.PNG)
 
 To set a breakpoint in VS Code, hover your mouse over the left margin next to the line of code you want to pause at, and click to place the breakpoint.
 When you run your code in debug mode, execution will stop right before that line, allowing you to inspect variables and confirm when you're ready to continue.
 
-![cmd](images/breakpoint.png)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/breakpoint.png)
 
 Once you’ve selected the breakpoints you want, click on “Run and Debug” in the left sidebar (the play icon with a bug).
 This will open a dropdown menu at the top of the window—choose “Python Debugger” from the list to start the debugging session.
 Your code will now run and automatically pause at the breakpoints you’ve set, allowing you to inspect variables and step through the execution.
 
-![cmd](images/python_debugger_select.PNG)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/python_debugger_select.PNG)
 
 While running your Python script—especially in debug mode—it can be very useful to monitor what’s happening in real time in K-Spice.
 To do this, open SimExplorer, where you’ll find an option to connect to the simulation.
 By clicking Connect, you’ll be linked to the active session that your Python script has started, allowing you to observe the model as it runs.
 
-![cmd](images/connect.PNG)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/connect.PNG)
 
 ---
 
