@@ -35,7 +35,7 @@ This filename provides useful information:
 - **`cp312`**: Indicates compatibility with **Python 3.12**.
 - **`win_amd64`**: Specifies that the package is intended for **64-bit Windows systems**.
 
-![cmd](images/bin64.PNG)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/730f3a316a97ed3d864d9cbfe33ebe2379f28816/images/bin64.PNG)
 
 Based on the information we’ve gathered above, we need to install Python 3.12. After speaking with people at Kongsberg, they recommended installing version 3.12.10. I’m not entirely sure why, but I assume that any 3.12 version should work.
 
