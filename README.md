@@ -2,7 +2,7 @@
 
 On this page, you'll find everything you need to know about interacting with the Yggdrasil model in K-Spice using the API. The content is organized into two main sections:
 
-1. [Setting up the API](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/tree/2de80aeca7321c5595e6784dc768446defb918c2/Setup)
+1. [Setting up the API](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/tree/d8577bc5b86a91a7dc8de0e752d7b43da7dce225/01.%20Setup)
 2. [Code and Usecases](#step-two---package-installation)
 
 
