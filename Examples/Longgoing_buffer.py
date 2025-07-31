@@ -6,11 +6,6 @@ from datetime import datetime
 import csv
 import kspice
 
-##################################################################################################################################################
-############################################################ Functions ###########################################################################
-##################################################################################################################################################
-
-
 def _write_header_if_needed(filename, variables):
     """Write the CSV header if the file does not exist or is empty."""
     try:
@@ -56,6 +51,9 @@ def run_long_simulation(
     total_seconds = total_minutes * 60
     buffer = []
 
+    # print start message
+    print("Simulation started, Progress: 0%...")
+
     # prepare progress checkpoints at 25%, 50%, 75%, and 100%
     checkpoints = [
         int(total_seconds * 0.25),
@@ -82,7 +80,7 @@ def run_long_simulation(
 
             # print progress at each checkpoint
             if next_cp < len(checkpoints) and second == checkpoints[next_cp]:
-                print(f"progres {25 * (next_cp + 1)}%")
+                print(f"Progress {25 * (next_cp + 1)}%...")
                 next_cp += 1
 
         # flush any remaining samples
@@ -90,19 +88,23 @@ def run_long_simulation(
             _flush_buffer(filename, buffer)
             buffer.clear()
 
+        # print completion message
+        print(f"Simulation completed successfully, file saved as: {filename}")
+
     except Exception as e:
-        # on error, flush what's left then re-raise
+        # on error, flush what's left then notify and re-raise
         if buffer:
             _flush_buffer(filename, buffer)
         print(f"[ERROR] Simulation interrupted: {e!r}")
+        print(f"Unexpected error, file saved as: {filename}")
         raise
+
 
 ##################################################################################################################################################
 ######################################### Initializing the K-Spice Simulator #####################################################################
 ##################################################################################################################################################
 
-
-project_path = "C:\K-Spice-Projects\Yggdrasil Hugin LATEST_Eryk_2"  # Path for project folder
+project_path = r"C:\K-Spice-Projects\Yggdrasil Hugin LATEST_Eryk_2"  # Path for project folder
 
 timeline = "Yggdrasil_LCS"                        # Name of the timeline to be activated
 mdlFile  = "Yggdrasil"                            # Name of the model file to be loaded
@@ -112,21 +114,20 @@ valFile  = "Yggdrasil_Steady_State_Manual_Mode"   # Name of the initial conditio
 # Instantiate the simulator object 
 sim = kspice.Simulator(project_path)
 
-#Open the project and load the timeline 
+# Open the project and load the timeline 
 tl = sim.activate_timeline(timeline)
 
 # Load models, parameters, initial_conditions
 tl.load(mdlFile, prmFile, valFile)
 
-# initialize the timeline
+# Initialize the timeline
 tl.initialize()
 
 # Different applications 
 selected_app = tl.applications[0].name           # Hugin A
 selected_app1 = tl.applications[1].name          # Hugin B
 
-
-# set the execution speed of the timleine to 2.1X real time
+# Set the execution speed of the timeline to 2.0X real time
 tl.set_speed(2.0)
 
 # === Your variables list ===
@@ -157,12 +158,12 @@ state = 0
 date_str = datetime.now().strftime("%d.%m.%Y_%H-%M")
 filename = f"{project_name}_state{state}_{date_str}.csv"
 
-# simulate 24 hours (1440 minutes), flush every 500 samples, print progress at each 25%
+# simulate 10 minutes (for testing), flush every 500 samples, print progress at each 25%
 run_long_simulation(
     timeline=tl,
     selected_app=selected_app,
     variables=variables,
     total_minutes=10,
-    chunk_size=500,
+    chunk_size=100,
     filename=filename
 )
