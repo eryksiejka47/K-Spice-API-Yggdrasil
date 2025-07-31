@@ -70,7 +70,7 @@ Before using the K-SPICE API, you’ll need some extra Python tools (called "pac
 
 If done correctly a window similar to this should pop up on your screen: 
 
-![cmd]((https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/d344e430d875f94c8131aa813d5286e79ef177e8/images/cmd_picture.PNG))
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/d344e430d875f94c8131aa813d5286e79ef177e8/images/cmd_picture.PNG)
 
 #### Installing `pip`
 
