@@ -43,19 +43,19 @@ We therefore start by installing [Python version 3.12.10](https://www.python.org
 
 Make sure to select the correct installer for your system, as shown below:
 
-![alt](images/python_download.png)
+![alt](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/5795823c47fa451ac7d7e5e490fb5e105811da7a/images/python_download.png)
 
 Double-click the downloaded file. You should see a window like this:
 
-![alt](images/python_installer.jpg)
+![alt](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/5795823c47fa451ac7d7e5e490fb5e105811da7a/images/python_installer.jpg)
 
 Chcek the `Add python.exe to PATH` and then click on `Customize installation` and check the boxes for:
 
-![alt](images/python2.png)
+![alt](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/5795823c47fa451ac7d7e5e490fb5e105811da7a/images/python2.png)
 
 Click on "Next" and then click `Install` to complete the installation:
 
-![alt](images/python3.png)
+![alt](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/5795823c47fa451ac7d7e5e490fb5e105811da7a/images/python3.png)
 
 ---
 
