@@ -17,7 +17,7 @@ Such a setup is especially beneficial for large models like Yggdrasil, where sim
 A smart strategy might be to schedule predefined test sequences to run overnight in order to save time.
 
 
-### Processing
+### Processing:
 K-Spice offers a wide range of parameters that can be logged and used for custom analysis.
 In most cases, no additional data processing is required — the raw output is sufficient.
 
