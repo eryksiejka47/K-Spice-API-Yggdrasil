@@ -143,7 +143,7 @@ In the screenshot below, you’ll see I named mine **K-Space-Projects** — this
 Keep all your **K-Spice projects** organized inside this folder.
 
 
-![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/extensions.jpg)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/29b3e263a2fe820d2dce7a5dea1c618db8214f6f/images/path_projects.png)
 
 Just remember to specify in **K-Spice Sim Explorer** which folder you’re using to store your projects:
 
