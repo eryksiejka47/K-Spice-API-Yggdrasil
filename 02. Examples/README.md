@@ -6,7 +6,7 @@ The focus was on making the code modular and easy to understand. To achieve this
 ![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/c584befc03935a049bdc69743a5abc52bcdd02fb/images/Block_Diagram.PNG)
 
 
-### Gathering
+### Gathering:
 
 The code in the "Gathering" module is responsible for generating the CSV files that will later be processed and used for data visualization.
 Users can program their own test sequences — for example, changing the opening of a valve or adjusting a setpoint in a controller.
