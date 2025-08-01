@@ -23,3 +23,7 @@ In most cases, no additional data processing is required — the raw output is s
 
 However, there are situations where custom calculations on the CSV files are necessary before plotting.
 For example, calculating the pressure difference between two points or performing other derived measurements.
+
+### Display
+After completing the tests, it’s important to present the data in a clear and meaningful way.
+As part of this project, code was developed to generate plots in both PNG and HTML formats.
