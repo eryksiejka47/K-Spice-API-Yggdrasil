@@ -6,4 +6,4 @@ On this page, you'll find everything you need to know about interacting with the
 2. [Code and Usecases](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/2432150053db07c155a892e31da4f48dc8f40dea/02.%20Examples/README.md)
 
 
-![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/6e767070d359a18e75f583306ae713bbacef228a/images/yggdrasil_47.PNG)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/2260a814f69e077e5b6be377cb01f143f9089b05/images/AKERBP_FRONT.jpg)
