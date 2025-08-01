@@ -258,12 +258,6 @@ By clicking Connect, you’ll be linked to the active session that your Python s
 
 ![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/1ea5eeed4f186112e3da18a74af763c96efaa454/images/connect.PNG)
 
----
 
-### Example Code: 
-Below are code examples demonstrating basic tasks such as running step responses and plotting data from CSV files: 
-
-1. [Plotting from CSV file](https://github.com/eryksiejka47/K-Spice-API-set-up/tree/main/plotting)
-2. [Step Response - Switch Case Structure](https://github.com/eryksiejka47/K-Spice-API-set-up/blob/763f5fde5ff52e5cbcaf33127f5efe01cbf67bd8/Examples/Step_Switch_Case.py)
 
 
