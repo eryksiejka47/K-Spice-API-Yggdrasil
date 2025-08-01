@@ -7,4 +7,4 @@ The content is organized into two main sections:
 2. [Code and Usecases](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/2432150053db07c155a892e31da4f48dc8f40dea/02.%20Examples/README.md)
 
 
-![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/2260a814f69e077e5b6be377cb01f143f9089b05/images/AKERBP_FRONT.jpg)
+![cmd](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/29095e21793f1f7e58b412aeb1f963c2eccdf0a7/images/yggdrasil_47.PNG)
