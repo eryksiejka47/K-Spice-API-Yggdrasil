@@ -268,13 +268,13 @@ while (True):
         case 0: # Initial state 
             print("State 0: Initializing the simulation...")
 
-            # Run the simulation for 60 minutes and collect samples
+            # Run the simulation for 2 minutes and collect samples
             run_and_sample(tl, selected_app1, variables, 2, samples)
 
             # Increase the valve stem position by 10% 
             adjust_parameter(tl, selected_app1, "G-13HCV0505:TargetPosition", 1.1)
 
-            # Run the simulation for 3 hours (180 minutes) and collect samples
+            # Run the simulation for 3 minutes and collect samples
             run_and_sample(tl, selected_app1, variables, 3, samples)
 
             # Save the samples to a CSV file        
