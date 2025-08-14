@@ -139,6 +139,111 @@ def adjust_parameter(timeline, app, parameter_name, multiplier):
     print(f"Adjusted {parameter_name}: {current} → {new_val} ({multiplier*100:.1f}%)")
 
 
+def change_valve_by_value(timeline, selected_app, parameter_name, change_value):
+    """
+    Adjusts a given parameter by adding or subtracting a specific value.
+
+    Parameters:
+    timeline: The active K-Spice timeline object.
+    selected_app: The application name within the timeline.
+    parameter_name (str): The name of the parameter to adjust.
+    change_value (float): The value to add or subtract (e.g., +10 or -25).
+    """
+    current_val = timeline.get_value(selected_app, parameter_name)
+    print(f"Current value of {parameter_name}: {current_val}")
+    
+    new_val = current_val + (change_value/100)
+    timeline.set_value(selected_app, parameter_name, new_val)
+    
+    print(f"Updated {parameter_name} to {new_val} (change of {change_value:+.1f})")
+
+
+def adjust_TIC(timeline, app, parameter_name, multiplier):
+    """
+    Multiply a control parameter by a given factor and update the timeline.
+
+    Params:
+        timeline (kspice.Timeline): Active timeline object.
+        app (str): Application name.
+        parameter_name (str): Name of the parameter to adjust.
+        multiplier (float): Factor to multiply the current value by.
+    """
+    current = timeline.get_value(app, parameter_name)
+    curreent_celcius = current - 273.15  # Convert from Kelvin to Celsius
+
+    temp = curreent_celcius * multiplier
+    new_val = temp + 273.15  # Convert back to Kelvin
+
+    print(f"Current value of {parameter_name}: {curreent_celcius}°C")
+    print(f"Adjusted value of {parameter_name}: {temp}°C → {new_val}K ({multiplier*100:.1f}%)")
+
+    timeline.set_value(app, parameter_name, new_val)
+    print(f"Adjusted {parameter_name}: {current} → {new_val} ({multiplier*100:.1f}%)")
+
+
+def change_TIC_by_value(timeline, selected_app, parameter_name, change_value):
+    """
+    Adjusts a given parameter by adding or subtracting a specific value.
+
+    Parameters:
+    timeline: The active K-Spice timeline object.
+    selected_app: The application name within the timeline.
+    parameter_name (str): The name of the parameter to adjust.
+    change_value (float): The value to add or subtract (e.g., +10 or -25).
+    """
+    current_val = timeline.get_value(selected_app, parameter_name)
+    curreent_celcius = current_val - 273.15  # Convert from Kelvin to Celsius
+    
+    temp = curreent_celcius + (change_value)
+    new_val = temp + 273.15  # Convert back to Kelvin
+
+    timeline.set_value(selected_app, parameter_name, new_val)
+    print(f"Updated {parameter_name} to {new_val} (change of {change_value:+.1f})")
+
+
+def adjust_PIC(timeline, app, parameter_name, multiplier):
+    """
+    Multiply a control parameter by a given factor and update the timeline.
+
+    Params:
+        timeline (kspice.Timeline): Active timeline object.
+        app (str): Application name.
+        parameter_name (str): Name of the parameter to adjust.
+        multiplier (float): Factor to multiply the current value by.
+    """
+    current = timeline.get_value(app, parameter_name)
+    curreent_barg = (current - 101325)/100000   # Convert from Pa to barg
+
+    temp = curreent_barg * multiplier
+    new_val = (temp * 100000) + 101325 # Convert back to Pa
+
+    print(f"Current value of {parameter_name}: {curreent_barg}°C")
+    print(f"Adjusted value of {parameter_name}: {temp}°C → {new_val}K ({multiplier*100:.1f}%)")
+
+    timeline.set_value(app, parameter_name, new_val)
+    print(f"Adjusted {parameter_name}: {current} → {new_val} ({multiplier*100:.1f}%)")
+
+
+def change_PIC_by_value(timeline, app, parameter_name, change_value):
+    """
+    Adjusts a given parameter by adding or subtracting a specific value.
+
+    Parameters:
+    timeline: The active K-Spice timeline object.
+    selected_app: The application name within the timeline.
+    parameter_name (str): The name of the parameter to adjust.
+    change_value (float): The value to add or subtract (e.g., +10 or -25).
+    """
+    current = timeline.get_value(app, parameter_name)
+    curreent_barg = (current - 101325)/100000   # Convert from Pa to barg
+
+    temp = curreent_barg + change_value
+    new_val = (temp * 100000) + 101325 # Convert back to Pa
+
+    timeline.set_value(app, parameter_name, new_val)
+    print(f"Updated {parameter_name} to {new_val} (change of {change_value:+.1f})")
+
+
 # --- Filename Generator ---
 def generate_filename(project_name, state):
     """
@@ -176,78 +281,131 @@ if __name__ == "__main__":
 
     # Variables to sample: [name, unit]
     variables = [
-        ["D-36L00040A-1200PRd:MassFlow",                    "kg/h"],          # 13050-01 FULLA PRODUCTION FLOWLINE                        0
-        ["F1_pf04:OutletStream.f",                          "kg/h"],          # 18011-01- F1                                              1
-        ["F3_pf04:OutletStream.f",                          "kg/h"],          # 18011-01- F3                                              2
-        ["F6_pf04:OutletStream.f",                          "kg/h"],          # 18011-01- F6                                              3
-        ["D-20L02001A-1600PR:OutletStream.f",               "kg/h"],          # 20070-01 HP Separator                                     4
-        ["D-20VA006:Pressure",                              "barg"],          # 20070-01 HP Separator                                     5
+        # Start of oil export 
+        ["D-21L00007A-1400PL-BD20a:OutletStream.f","kg/h"],                   # CRUDE OIL metering MASS FLOW                          0
+        ["D-21L00007A-1400PL-BD20a:OutletStream.q","m3/h"],                   # CRUDE OIL metering Volume FLOW                        1
+        ["D-21L00007A-1400PL-BD20a:OutletStream.w","kg/mol"],                 # CRUDE OIL Molar mass                                  2
 
-        ["LedaBoundary_Rind_pv:OutletStream[0].f",          "kg/h"],          # 13040-01 RIND Production Flowline                         6
-        ["RD1_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 RD1                                              7
-        ["RD2_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 RD2                                              8
-        ["RD3_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 RD3 (RDSLG)                                      9
-        ["D-13L00103A-1400PRb:MassFlow",                    "kg/h"],          # From Manifold RIND to Main Production Manifold           10
-        ["D-13L00104A-1400PRa_pv:OutletStream[0].f",        "kg/h"],          # From Manifold RIND to Main Test Manifold                 11
+        # Start of gas export
+        ["D-27L00022A-1400PVd_pv:OutletStream[0].f","kg/h"],                  # GAS EXPORT MASS FLOW                                  3
+        ["D-27L00022A-1400PVd_pv:OutletStream[0].q","m3/h"],                  # GAS EXPORT Volume FLOW                                4
+        ["D-27L00022A-1400PVd_pv:OutletStream[0].w","kg/mol"],                # GAS EXPORT Molar mass                                 5
+        ["D-27PT0260:MeasuredValue","barg"],                                  # Gas export pressure                                   6
 
-        ["LedaBoundary_Langfjellet_pv:OutletStream[0].f",   "kg/h"],          # 13045-01 LANGFJELLET Production Flowline                 12
-        ["LF1_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 LF1                                             13
-        ["LF2_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 LF2                                             14
-        ["LF4_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 LF04b5                                          15
-        ["D-13L00203A-1400PRb:MassFlow",                    "kg/h"],          # From Manifold LANGFJELLET to Main Production Manifold    16
-        ["D-13L00204A-1400PRa_pv:OutletStream[0].f",        "kg/h"],          # From Manifold LANGFJELLET to Main Test Manifold          17
+        # Active Powers
+        ["D-23KA001_m:ActivePower","kW"],                                    # Start of power consumption compressors                 7
+        ["D-27KA001_m:ActivePower","kW"],                                    #                                                        8
+        ["D-27KA002_m:ActivePower","kW"],                                    #                                                        9                     
+        ["D-26KA001_m:ActivePower","kW"],                                    # End of power consumption compressors                  10
 
-        ["N-18L8100A-1200PRa_pv:OutletStream[0].f",         "kg/h"],          # 18050-01 LANGFJELLET SOUTH FLOWLINE                      18
-        ["LF3_pf04:OutletStream.f",                         "kg/h"],          # 18051-01 LF3                                             19
+        ["D-21PA001A_m:ActivePower","kW"],                                   # Start of power consumption pumps                      11
+        ["D-21PA002A_m:ActivePower","kW"],                                   #                                                       12
+        ["D-21PA002B_m:ActivePower","kW"],                                   #                                                       13
+        ["D-21PA001B_m:ActivePower","kW"],                                   # End of power consumption pumps                        14
 
-        ["D-20VA001:Pressure",                              "barg"],          # Main Separator Pressure                                  20             
+        # Pressure measurements  
+        ["D-13PT2625:MeasuredValue","barg"],                                 # Upstream Fulla and Lille-FRIGG                        15
+        ["D-13PT2628:MeasuredValue","barg"],                                 # Downstream Fulla and Lille-FRIGG                      16
+
+        ["D-13PT2317:MeasuredValue","barg"],                                 # Upstream Rind                                         17
+        ["D-13PT2321:MeasuredValue","barg"],                                 # Downstream Rind                                       18
+
+        ["D-13PT2417:MeasuredValue","barg"],                                 # Upstream Langfjellet                                  19
+        ["D-13PT2421:MeasuredValue","barg"],                                 # Downstream Langfjellet                                20
+
+        ["D-13PT2118:MeasuredValue","barg"],                                 # Upstream Hugin B (Frøy)                               21
+        ["D-13PT2122:MeasuredValue","barg"],                                 # Downstream Hugin B (Frøy)                             22
 
         #MAIN SEPARATOR
-        ["D-20LIC0106:Measurement",                            "m"],          # D-20LIC106  PV                                           21
-        ["D-20LIC0106:InternalSetpoint",                       "m"],          # D-20LIC106  SP                                           22
-        ["D-20LIC0106:ControllerOutput",                       "%"],          # D-20LIC106  CV                                           23
+        ["D-20LIC0106:Measurement",                            "m"],         # D-20LIC106  PV                                        23
+        ["D-20LIC0106:InternalSetpoint",                       "m"],         # D-20LIC106  SP                                        24
+        ["D-20LIC0106:ControllerOutput",                       "%"],         # D-20LIC106  CV                                        25
 
-        ["D-20LIC0119:Measurement",                            "m"],          # D-20LIC0119 PV                                           24
-        ["D-20LIC0119:InternalSetpoint",                       "m"],          # D-20LIC0119 SP                                           25
-        ["D-20LIC0119:ControllerOutput",                       "%"],          # D-20LIC0119 CV                                           26
+        ["D-20LIC0119:Measurement",                            "m"],         # D-20LIC0119 PV                                        26
+        ["D-20LIC0119:InternalSetpoint",                       "m"],         # D-20LIC0119 SP                                        27
+        ["D-20LIC0119:ControllerOutput",                       "%"],         # D-20LIC0119 CV                                        28
 
         #HP SEPARATOR 
-        ["D-20LIC2604:Measurement",                            "m"],          # D-20LIC2604 PV                                           27
-        ["D-20LIC2604:InternalSetpoint",                       "m"],          # D-20LIC2604 SP                                           28
-        ["D-20LIC2604:ControllerOutput",                       "%"],          # D-20LIC2604 CV                                           29
+        ["D-20LIC2604:Measurement",                            "m"],         # D-20LIC2604 PV                                        29
+        ["D-20LIC2604:InternalSetpoint",                       "m"],         # D-20LIC2604 SP                                        30
+        ["D-20LIC2604:ControllerOutput",                       "%"],         # D-20LIC2604 CV                                        31
 
-        ["D-20LIC2627:Measurement",                            "m"],          # D-20LIC2627 PV                                           30
-        ["D-20LIC2627:InternalSetpoint",                       "m"],          # D-20LIC2627 SP                                           31
-        ["D-20LIC2627:ControllerOutput",                       "%"],          # D-20LIC2627 CV                                           32
+        ["D-20LIC2627:Measurement",                            "m"],         # D-20LIC2627 PV                                        32
+        ["D-20LIC2627:InternalSetpoint",                       "m"],         # D-20LIC2627 SP                                        33
+        ["D-20LIC2627:ControllerOutput",                       "%"],         # D-20LIC2627 CV                                        34
 
         #FRØY SEPARATOR 
-        ["D-20LIC2106:Measurement",                            "m"],          # D-20LIC2106 PV                                           33
-        ["D-20LIC2106:InternalSetpoint",                       "m"],          # D-20LIC2106 SP                                           34
-        ["D-20LIC2106:ControllerOutput",                       "%"],          # D-20LIC2106 CV                                           35
+        ["D-20LIC2106:Measurement",                            "m"],         # D-20LIC2106 PV                                        35
+        ["D-20LIC2106:InternalSetpoint",                       "m"],         # D-20LIC2106 SP                                        36
+        ["D-20LIC2106:ControllerOutput",                       "%"],         # D-20LIC2106 CV                                        37
 
-        ["D-20LIC2120:Measurement",                            "m"],          # D-20LIC2120 PV                                           36
-        ["D-20LIC2120:InternalSetpoint",                       "m"],          # D-20LIC2120 SP                                           37
-        ["D-20LIC2120:ControllerOutput",                       "%"],          # D-20LIC2120 CV                                           38
+        ["D-20LIC2120:Measurement",                            "m"],         # D-20LIC2120 PV                                        38
+        ["D-20LIC2120:InternalSetpoint",                       "m"],         # D-20LIC2120 SP                                        39
+        ["D-20LIC2120:ControllerOutput",                       "%"],         # D-20LIC2120 CV                                        40
 
         #2ND STAGE SEPARATOR 
-        ["D-20LIC0206:Measurement",                            "m"],          # D-20LIC0206 PV                                           39
-        ["D-20LIC0206:InternalSetpoint",                       "m"],          # D-20LIC0206 SP                                           40
-        ["D-20LIC0206:ControllerOutput",                       "%"],          # D-20LIC0206 CV                                           41
+        ["D-20LIC0206:Measurement",                            "m"],         # D-20LIC0206 PV                                        41
+        ["D-20LIC0206:InternalSetpoint",                       "m"],         # D-20LIC0206 SP                                        42
+        ["D-20LIC0206:ControllerOutput",                       "%"],         # D-20LIC0206 CV                                        43
 
-        ["D-20LIC0224:Measurement",                            "m"],          # D-20LIC0224 PV                                           42
-        ["D-20LIC0224:InternalSetpoint",                       "m"],          # D-20LIC0224 SP                                           43
-        ["D-20LIC0224:ControllerOutput",                       "%"],          # D-20LIC0224 CV                                           44
+        ["D-20LIC0224:Measurement",                            "m"],         # D-20LIC0224 PV                                        44
+        ["D-20LIC0224:InternalSetpoint",                       "m"],         # D-20LIC0224 SP                                        45
+        ["D-20LIC0224:ControllerOutput",                       "%"],         # D-20LIC0224 CV                                        46
 
         #3RD STAGE SEPARATOR 
-        ["D-20LIC0309:Measurement",                            "m"],          # D-20LIC0309 PV                                           45
-        ["D-20LIC0309:InternalSetpoint",                       "m"],          # D-20LIC0309 SP                                           46
-        ["D-20LIC0309:ControllerOutput",                    "m3/h"],          # D-20LIC0309 CV                                           47
+        ["D-20LIC0309:Measurement",                            "m"],         # D-20LIC0309 PV                                        47
+        ["D-20LIC0309:InternalSetpoint",                       "m"],         # D-20LIC0309 SP                                        48
+        ["D-20LIC0309:ControllerOutput",                    "m3/h"],         # D-20LIC0309 CV                                        49
+
+        #21PIC0557
+        ["D-21PIC0557:Measurement",                         "barg"],         # D-21PIC0557 PV                                        50
+        ["D-21PIC0557:InternalSetpoint",                    "barg"],         # D-21PIC0557 SP                                        51
+        ["D-21PIC0557:ControllerOutput",                       "%"],         # D-21PIC0557 CV                                        52
+        
+        #27TIC0307
+        ["D-27TIC0307:Measurement",                            "C"],         # D-27TIC0307 PV                                        53
+        ["D-27TIC0307:InternalSetpoint",                       "C"],         # D-27TIC0307 SP                                        54
+        ["D-27TIC0307:ControllerOutput",                       "%"],         # D-27TIC0307 CV                                        55
+
+        #23TIC0204
+        ["D-23TIC0204:Measurement",                            "C"],         # D-23TIC0204 PV                                        56
+        ["D-23TIC0204:InternalSetpoint",                       "C"],         # D-23TIC0204 SP                                        57
+        ["D-23TIC0204:ControllerOutput",                       "%"],         # D-23TIC0204 CV                                        58
+
+        #24TIC0008
+        ["D-24TIC0008:Measurement",                            "C"],         # D-24TIC0008 PV                                        59
+        ["D-24TIC0008:InternalSetpoint",                       "C"],         # D-24TIC0008 SP                                        60
+        ["D-24TIC0008:ControllerOutput",                       "%"],         # D-24TIC0008 CV                                        61
+
+        #20TIC0188_S
+        ["D-20TIC0188:Measurement",                            "C"],         # D-20TIC0188_S PV                                      62
+        ["D-20TIC0188:InternalSetpoint",                       "C"],         # D-20TIC0188_S SP                                      63
+        ["D-20TIC0188:ControllerOutput",                       "%"],         # D-20TIC0188_S CV                                      64
+
+        #21TIC0406
+        ["D-21TIC0406:Measurement",                            "C"],         # D-21TIC0406 PV                                        65
+        ["D-21TIC0406:InternalSetpoint",                       "C"],         # D-21TIC0406 SP                                        66
+        ["D-21TIC0406:ControllerOutput",                       "%"],         # D-21TIC0406 CV                                        67
+
+        #21TIC0405
+        ["D-21TIC0405:Measurement",                           "C"],          # D-21TIC0405_SP PV                                     68
+        ["D-21TIC0405:InternalSetpoint",                      "C"],          # D-21TIC0405_SP SP                                     69
+        ["D-21TIC0405:ControllerOutput",                      "%"],          # D-21TIC0405_SP CV                                     70
+
+        #24TDIC0040
+        ["D-24TDIC0040:Measurement",                          "C"],          # D-24TDIC0040_SP PV                                    71
+        ["D-24TDIC0040:InternalSetpoint",                     "C"],          # D-24TDIC0040_SP SP                                    72
+        ["D-24TDIC0040:ControllerOutput",                     "%"],          # D-24TDIC0040_SP CV                                    73
+
+        #27TIC0204
+        ["D-27TIC0204:Measurement",                          "C"],           # D-27TIC0204_SP PV                                     74
+        ["D-27TIC0204:InternalSetpoint",                     "C"],           # D-27TIC0204_SP SP                                     75
+        ["D-27TIC0204:ControllerOutput",                     "%"],           # D-27TIC0204_SP CV                                     76
 ]
 
-    project_name = "Yggdrasil_tetser"
-    chunk_size   = 300
+    project_name = "Yggdrasil_tester"
+    chunk_size   = 500
     state        = 0
-
 
 ##################################################################################################################################################
 ######################################### Running the Switch case logic ##########################################################################
@@ -260,22 +418,23 @@ while True:
         try:
             match state:
                 case 0:
-                    # State 0: 2min, adjust valve, 180min
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 0 ---")
-                    run_buffered_simulation(tl, app0, variables, 2,   chunk_size, filename)
-                    adjust_parameter(tl, app0, "D-13HCV2627:TargetPosition", 1.1)
-                    run_buffered_simulation(tl, app1, variables, 180, chunk_size, filename)
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.initialize()
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_PIC(tl, app0, "D-21PIC0557:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
                     state = 1
-
+                    
                 case 1:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 1 ---")
                     tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
                     tl.initialize()
-                    run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
-                    adjust_parameter(tl, app0, "D-27PIC0101:InternalSetpoint", 1.1)
-                    run_buffered_simulation(tl, app0, variables, 1, chunk_size, filename)
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-27TIC0307:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
                     state = 2
 
                 case 2:
@@ -283,9 +442,9 @@ while True:
                     print("\n--- STATE 2 ---")
                     tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
                     tl.initialize()
-                    run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
-                    adjust_parameter(tl, app0, "D-27TIC0106:InternalSetpoint", 1.1)
-                    run_buffered_simulation(tl, app0, variables, 1, chunk_size, filename)
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-23TIC0204:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
                     state = 3
 
                 case 3:
@@ -293,9 +452,9 @@ while True:
                     print("\n--- STATE 3 ---")
                     tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
                     tl.initialize()
-                    run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
-                    adjust_parameter(tl, app0, "D-24PIC0002:InternalSetpoint", 1.1)
-                    run_buffered_simulation(tl, app0, variables, 1, chunk_size, filename)
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-24TIC0008:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
                     state = 4
 
                 case 4:
@@ -303,9 +462,9 @@ while True:
                     print("\n--- STATE 4 ---")
                     tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
                     tl.initialize()
-                    run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
-                    adjust_parameter(tl, app0, "D-26PIC0056:InternalSetpoint", 1.1)
-                    run_buffered_simulation(tl, app0, variables, 11, chunk_size, filename)
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-20TIC0188:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
                     state = 5
 
                 case 5:
@@ -313,10 +472,40 @@ while True:
                     print("\n--- STATE 5 ---")
                     tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
                     tl.initialize()
-                    run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
-                    adjust_parameter(tl, app0, "D-20PIC0304:InternalSetpoint", 0.9)
-                    run_buffered_simulation(tl, app0, variables, 1, chunk_size, filename)
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-21TIC0406:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
                     print("\n=== Simulation complete! ===")
+                    state = 6 
+
+                case 6:
+                    filename = generate_filename(project_name, state)
+                    print("\n--- STATE 6 ---")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.initialize()
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-21TIC0405:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
+                    state = 7
+
+                case 7:
+                    filename = generate_filename(project_name, state)
+                    print("\n--- STATE 7 ---")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.initialize()
+                    run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-27TIC0204:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 180, chunk_size, filename)
+                    state = 8
+                
+                case 8:
+                    filename = generate_filename(project_name, state)
+                    print("\n--- STATE 8 ---")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.initialize()
+                    run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
+                    adjust_TIC(tl, app0, "D-24TDIC0040:InternalSetpoint", 1.1)
+                    run_buffered_simulation(tl, app0, variables, 1, chunk_size, filename)
                     break
 
         except Exception as e:
