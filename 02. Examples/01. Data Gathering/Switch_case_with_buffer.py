@@ -420,7 +420,7 @@ while True:
                 case 0:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 0 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_PIC(tl, app0, "D-21PIC0557:InternalSetpoint", 1.1)
@@ -430,7 +430,7 @@ while True:
                 case 1:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 1 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-27TIC0307:InternalSetpoint", 1.1)
@@ -440,7 +440,7 @@ while True:
                 case 2:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 2 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-23TIC0204:InternalSetpoint", 1.1)
@@ -450,7 +450,7 @@ while True:
                 case 3:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 3 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-24TIC0008:InternalSetpoint", 1.1)
@@ -460,7 +460,7 @@ while True:
                 case 4:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 4 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-20TIC0188:InternalSetpoint", 1.1)
@@ -470,7 +470,7 @@ while True:
                 case 5:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 5 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-21TIC0406:InternalSetpoint", 1.1)
@@ -481,7 +481,7 @@ while True:
                 case 6:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 6 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-21TIC0405:InternalSetpoint", 1.1)
@@ -491,7 +491,7 @@ while True:
                 case 7:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 7 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 60,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-27TIC0204:InternalSetpoint", 1.1)
@@ -501,7 +501,7 @@ while True:
                 case 8:
                     filename = generate_filename(project_name, state)
                     print("\n--- STATE 8 ---")
-                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+                    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
                     tl.initialize()
                     run_buffered_simulation(tl, app0, variables, 1,  chunk_size, filename)
                     adjust_TIC(tl, app0, "D-24TDIC0040:InternalSetpoint", 1.1)
