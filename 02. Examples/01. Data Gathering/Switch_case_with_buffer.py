@@ -271,7 +271,7 @@ if __name__ == "__main__":
     project_path = r"C:\K-Spice-Projects\Yggdrasil Hugin LATEST_Eryk_2"
     sim = kspice.Simulator(project_path)
     tl  = sim.activate_timeline("Yggdrasil_LCS")
-    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil_Steady_State_Manual_Mode")
+    tl.load("Yggdrasil", "Yggdrasil", "Yggdrasil")
     tl.initialize()
     tl.set_speed(2.0)
 
