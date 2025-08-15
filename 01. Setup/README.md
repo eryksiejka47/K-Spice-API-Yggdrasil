@@ -81,7 +81,7 @@ python -m ensurepip --upgrade
 
 ```
 
-If you have multiple Python versions installed on your device or encounter issues during package installation, check out [this section](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/main/01.%20Setup/README.md#package-installation-issues). 
+> If you have multiple Python versions installed on your device or encounter issues during package installation, it can be helpful to check out [this section](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/main/01.%20Setup/README.md#package-installation-issues). 
 
 
 #### Then, install the packages:
