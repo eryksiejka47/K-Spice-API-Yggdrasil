@@ -114,6 +114,12 @@ It can look something like this:
 
 ![K-Spice Python API](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/710fdad56f2bb703b40db8b7101c80f820489774/images/multiple_versions.PNG)
 
+To download packages to python version 3.12 you can write a command in the same format but with your path: 
+
+ ```bash
+"C:\Users\Eryksiej\AppData\Local\Programs\Python\Python312\python.exe" -m pip install pandas numpy matplotlib python-dateutil csvkit
+```
+
 ---
 
 ## Step Three – Set up Visual Studio Code editor
