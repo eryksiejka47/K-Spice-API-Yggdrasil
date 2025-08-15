@@ -101,13 +101,14 @@ python -m pip install <library-name>
 ```
 
 ### Multiple versions or python not in enviroment variables?
-> **Note:** If you dindnt encounter any problems just advance to step three.
+> **Note:** If you didn’t encounter any problems, advance to step three.
 
-You can have multiple python versions on your device or the version you are going to use is not in the enviroment variables. To check where the different python versions are located type this in the cmd prompt: 
+You can have multiple Python versions installed on your device, or the version you're trying to use might not be included in the environment variables. To check where the different Python versions are located, type the following in the Command Prompt:
 
  ```bash
 where python
 ```
+It can look something like this:
 
 ![K-Spice Python API](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/710fdad56f2bb703b40db8b7101c80f820489774/images/multiple_versions.PNG)
 
