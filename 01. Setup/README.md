@@ -100,6 +100,8 @@ You can always come back to this step and install more packages later using the 
 python -m pip install <library-name>
 ```
 
+---
+
 ### Multiple versions or python not in enviroment variables?
 > **Note:** If you didn’t encounter any problems, advance to step three.
 
