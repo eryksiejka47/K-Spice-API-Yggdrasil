@@ -240,8 +240,9 @@ This chapter provides a brief overview of the available resources and explains h
 1. [Official Documentation](#official-documentation)
 2. [Useful Github pages](#useful-github-pages)
 3. [Running Code in Debug Mode](#running-code-in-debug-mode)
-4. [Example Code](#example-code)
+   
 ---
+
 ### Official Documentation
 
 First of all, you can find the official K-Spice documentation [here](https://akerbp.sharepoint.com/:f:/s/E2EProductionOptimizationAutomatedwellcontrol/Eo5NKqmLq5tErv02UsjdYksB1yE4VbWZFjLQCPJPQQWRUg?e=yiTFJr).
