@@ -91,8 +91,8 @@ chemical_masses_gas = {
 ################################################################################################ Processing #######################################################################################################
 ###################################################################################################################################################################################################################
 
-chemicals = list(chemical_masses_oil.keys())
-molar_masses = [chemical_masses_oil[ch] for ch in chemicals]
+chemicals = list(chemical_masses_oil.keys())                  #CHANGE HERE TO SWAP THE "MAP"
+molar_masses = [chemical_masses_oil[ch] for ch in chemicals]  #CHANGE HERE TO SWAP THE "MAP"
 
 # Read the CSV file
 try:
