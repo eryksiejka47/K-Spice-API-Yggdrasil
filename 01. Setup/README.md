@@ -102,7 +102,7 @@ python -m pip install <library-name>
 
 ---
 
-### Multiple versions or python not in enviroment variables?
+### Package Installation Issues?
 > **Note:** If you didn’t encounter any problems, advance to step three.
 
 You can have multiple Python versions installed on your device, or the version you're trying to use might not be included in the environment variables. To check where the different Python versions are located, type the following in the Command Prompt:
