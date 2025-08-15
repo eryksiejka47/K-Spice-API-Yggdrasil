@@ -76,12 +76,13 @@ If done correctly a window similar to this should pop up on your screen:
 
 `pip` is a tool that lets you download and install other useful Python packages. It usually comes with Python, but if it’s missing, you can install it by running:
 
-If you have multiple Python versions installed on your device or encounter issues during package installation, check out [this section](https://code.visualstudio.com/download). 
-
 ```bash
 python -m ensurepip --upgrade
 
 ```
+
+If you have multiple Python versions installed on your device or encounter issues during package installation, check out [this section](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/main/01.%20Setup/README.md#package-installation-issues). 
+
 
 #### Then, install the packages:
 
@@ -97,6 +98,7 @@ This will install:
 - `datetime` – for handling timelines
 
 You can always come back to this step and install more packages later using the same format:
+
 
 ```shell
 python -m pip install <library-name>
