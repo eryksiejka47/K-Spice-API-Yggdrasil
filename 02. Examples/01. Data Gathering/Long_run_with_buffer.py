@@ -109,7 +109,7 @@ project_path = r"C:\K-Spice-Projects\Yggdrasil Hugin LATEST_Eryk_2"  # Path for 
 timeline = "Yggdrasil_LCS"                        # Name of the timeline to be activated
 mdlFile  = "Yggdrasil"                            # Name of the model file to be loaded
 prmFile  = "Yggdrasil"                            # Name of the parameter file to be loaded
-valFile  = "Yggdrasil"   # Name of the initial conditions file to be loaded
+valFile  = "Yggdrasil"                            # Name of the initial conditions file to be loaded
 
 # Instantiate the simulator object 
 sim = kspice.Simulator(project_path)
