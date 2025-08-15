@@ -152,7 +152,7 @@ for i, idx in enumerate(selected_indices):
     chem = chemicals[i]
     print(f"  Column {idx} ({col_name}) → {chem} (MW={mw})")
     try:
-        total += (df[col_name] / 100) * mw  # <-- poprawka tutaj
+        total += (df[col_name] / 100) * mw  
     except Exception as e:
         print(f"Error processing column '{col_name}': {e}")
 
