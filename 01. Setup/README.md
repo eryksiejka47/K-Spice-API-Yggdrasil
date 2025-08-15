@@ -109,7 +109,7 @@ You can have multiple python versions on your device or the version you are goin
 where python
 ```
 
-![K-Spice Python API](images/multiple_versions.PNG)
+![K-Spice Python API](https://github.com/eryksiejka47/K-Spice-API-Yggdrasil/blob/710fdad56f2bb703b40db8b7101c80f820489774/images/multiple_versions.PNG)
 
 
 ## Step Three – Set up Visual Studio Code editor
